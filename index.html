@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de estudiantes</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+</head>
+<body>
+    <div id="bloqueRegistro">
+    <img src="https://www.icesi.edu.co/launiversidad/images/La_universidad/logo_icesi.png" alt="logo_icesi" height="60">
+    <h3>Registro de estudiantes</h3>
+    <p><input type="text" placeholder="Nombre de estudiante" id="firstnameIT"></p>
+    <p><input type="text" placeholder="Apellido de estudiante" id="secondnameIT"></p>
+    <p><input type="text" placeholder="Código de estudiante" id="codeIT"></p>
+    <h4>Elige un avatar</h4>
+
+    <p>
+        <img class="avatar" src="img/u1.jpg" alt="" width="96px">
+        <img class="avatar" src="img/u2.jpg" alt="" width="96px">
+        <img class="avatar" src="img/u3.jpg" alt="" width="96px">
+        <img class="avatar" src="img/u4.jpg" alt="" width="96px">
+    </p>
+    <p>
+        <img class="avatar" src="img/u5.jpg" alt="" width="96px">
+        <img class="avatar" src="img/u6.jpg" alt="" width="96px">
+        <img class="avatar" src="img/u7.jpg" alt="" width="96px">
+        <img class="avatar" src="img/u8.jpg" alt="" width="96px">
+    </p>
+
+    <p><button id="registerBtn"> Registrar</button></p>
+
+</div>
+<div id="listaEstudiantes">
+    <!--Crear un contenedor-->
+    <!--<div id="contenedorBase"></div>-->
+    <h3>Lista de estudiantes</h3>
+    <ul id="contenedorBase"></ul>
+</div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+<script type="text/javascript" src="js/model/estudiante.js"></script>
+<script type="text/javascript" src="js/control/functions.js"></script>
+</html>

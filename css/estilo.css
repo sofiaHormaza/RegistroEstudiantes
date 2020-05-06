@@ -1,0 +1,12 @@
+#listaEstudiantes{
+    position: absolute;
+    left:50%;
+    top:5%;
+}
+
+#bloqueRegistro{
+    position: fixed;
+    left: 5%;
+    top:5%;
+
+}
